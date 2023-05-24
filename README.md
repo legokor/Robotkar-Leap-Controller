@@ -7,6 +7,9 @@
      - [Unity leap plugin](https://docs.ultraleap.com/unity-api/The-Basics/getting-started.html)
      - [Hand tracking data](https://docs.ultraleap.com/unity-api/Using%20Hand%20Tracking%20Data/getting-tracking-data.html)
 
+## Robotic Arm Simulator
+ - [Unity project](https://github.com/legokor/RoboticArmNetworkSimulator)
+
 ## Unity - Arm communication
  - Cartesian to Cylindrical coordinates
      - (x, y, z) &rarr; (r, fi, z)
