@@ -28,22 +28,19 @@ public class NetworkManager
     
     public static void GetResponse(Vector3 position)
     {
-        var baseUrl = "https://legokor.hu";
+        var baseUrl = "http://localhost:8000";
         var coordinates = new CylindricalCoordinate(position);
         var parameterUrl = $"/action/coord/cyl?r={coordinates.r}&f={coordinates.f}&z={coordinates.z}";
         var requestUrl = baseUrl + parameterUrl;
         Debug.Log(requestUrl);
         var request = WebRequest.Create(requestUrl);
         request.Method = "GET";
-/*
+
         using var webResponse = request.GetResponse();
         using var webStream = webResponse.GetResponseStream();
 
         using var reader = new StreamReader(webStream);
         var data = reader.ReadToEnd();
-
-        return data;
-        */
     }
     
 }
