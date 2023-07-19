@@ -13,7 +13,7 @@ public class NetworkManager
     class CylindricalCoordinate {
         public CylindricalCoordinate(Vector3 position/*, Vector3 origin*/) {
             this.r = Math.Sqrt(Math.Pow(position.x, 2) + Math.Pow(position.y, 2)); //Vector3.Distance is ezt csinálja
-            this.f = Math.Tan(position.y / position.z);
+            this.f = Math.Atan(position.y / position.z);
             this.z = position.z;
         }
         public double r { get; private set; }
